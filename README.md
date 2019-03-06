@@ -1,4 +1,3 @@
-# Deep Recurrent Q-Network
 # 强化学习不太强，mazeworld无妹子
 This is a demo of DQRN, in the Mazeworld.
 
