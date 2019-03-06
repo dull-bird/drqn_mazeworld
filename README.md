@@ -1,4 +1,5 @@
 # Deep Recurrent Q-Network
+# 强化学习不太强，mazeworld无妹子
 This is a demo of DQRN, in the Mazeworld.
 
 In the maze: Mazeworld3, there is a BONUS at position (3, 4), if you get (3, 4) for the first time, and if you choose to act "UP", you will get a bonus of 100.
