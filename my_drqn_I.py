@@ -1,4 +1,5 @@
-#drqn for solving history-dependent problems
+#drqn with I_k = {states, actions}
+
 import numpy as np
 
 import torch
@@ -8,11 +9,13 @@ import torch.nn.functional as F
 import math
 import random
 
-from agents.DQN import Model as DQN_Agent
+from agents.DQN_a import Model as DQN_Agent
 
+
+from utils.ReplayMemory import ExperienceReplayMemory
 from utils.hyperparameters import Config
 
-import mazeworld
+import mazeworld_I as mazeworld
 
 config = Config()
 
@@ -35,7 +38,7 @@ config.EXP_REPLAY_SIZE = 2000
 config.BATCH_SIZE = 32
 
 #Learning control variables
-config.LEARN_START = 100
+config.LEARN_START = 2000
 config.MAX_FRAMES=1500000
 
 #Nstep controls
@@ -84,7 +87,7 @@ class RecurrentExperienceReplayMemory:
 
 
 class DRQN(nn.Module):
-    def __init__(self, input_shape, num_actions, gru_size=10, bidirectional=False):
+    def __init__(self, input_shape, num_actions, gru_size=15, bidirectional=False):
         super(DRQN, self).__init__()
 
         self.input_shape = input_shape
@@ -94,7 +97,7 @@ class DRQN(nn.Module):
         self.num_directions = 2 if self.bidirectional else 1
 
         #self.body = body(input_shape, num_actions)
-        self.gru = nn.GRU(self.input_shape, self.gru_size, num_layers=1, batch_first=True,
+        self.gru = nn.GRU(self.input_shape, self.gru_size, num_layers=2, batch_first=True,
                           bidirectional=bidirectional)
         self.fc1 = nn.Linear(self.gru_size, 50)
         self.fc2 = nn.Linear(50, self.num_actions)
@@ -117,7 +120,7 @@ class DRQN(nn.Module):
         # return x
 
     def init_hidden(self, batch_size):
-        return torch.zeros(1 * self.num_directions, batch_size, self.gru_size, device=device, dtype=torch.float)
+        return torch.zeros(2 * self.num_directions, batch_size, self.gru_size, device=device, dtype=torch.float)
 
     def sample_noise(self):
         pass
@@ -220,14 +223,6 @@ class Model(DQN_Agent):
         self.seq = [np.zeros(self.num_feats) for j in range(self.sequence_length)]
 
 if __name__ == "__main__":
-    #start = timer()
-
-    #env_id = "PongNoFrameskip-v4"
-    #env = make_atari(env_id)
-    #env = wrap_deepmind(env, frame_stack=False)
-    #env = wrap_pytorch(env)
-
-
     env = mazeworld.gameEnv()
     model = Model(env=env, config=config)
 
@@ -236,17 +231,31 @@ if __name__ == "__main__":
     observation = env.reset()
 
     episode_num = 0
+    action = 0
+
+    observation_action = list(observation).copy()
+    observation_action.append(action)
 
     for frame_idx in range(1, config.MAX_FRAMES + 1):
+        prev_observation_action = observation_action
+
         epsilon = config.epsilon_by_frame(frame_idx)
 
-        action = model.get_action(observation, epsilon)
-        prev_observation = observation
-        observation, reward, done = env.step(action)
-        observation = None if done else observation
+        action = model.get_action(observation_action, epsilon)
 
-        model.update(prev_observation, action, reward, observation, frame_idx)
+        observation, reward, done = env.step(action)
+
+        if done:
+
+            observation_action = None
+        else:
+            observation_action = list(observation).copy()
+            observation_action.append(action)
+
+        model.update(prev_observation_action, action, reward, observation_action, frame_idx)
         episode_reward += reward
+
+        #print(prev_observation_action, action, reward, observation_action, frame_idx)
 
         if done or episode_reward < -1000:
 
@@ -258,22 +267,23 @@ if __name__ == "__main__":
             model.save_reward(episode_reward)
             episode_reward = 0
             episode_num += 1
+            action = 0
+
+            observation_action = list(observation).copy()
+            observation_action.append(action)
 
 
-            if np.mean(model.rewards[-20:]) > 50:
+            if np.mean(model.rewards[-30:]) > 130:
                 break
 
+    torch.save(model.model, 'model_drqn_no_S.pkl')
 
-    #model.save_w()
-    #env.close()
-
-    torch.save(model.model, 'model.pkl')
-    #model = torch.load('model.pkl')
-
+    #simple test
     R = 0
     s = env.reset()
+    a = 0
     while True:
-        a = model.get_action(s, 0.05)
+        a = model.get_action([s[0], s[1], a], 0.01)
         print(s, a)
         s, reward, done = env.step(a)
         R += reward

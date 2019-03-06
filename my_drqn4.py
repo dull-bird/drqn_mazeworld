@@ -1,4 +1,3 @@
-#drqn for solving history-dependent problems
 import numpy as np
 
 import torch
@@ -10,9 +9,11 @@ import random
 
 from agents.DQN import Model as DQN_Agent
 
+
+from utils.ReplayMemory import ExperienceReplayMemory
 from utils.hyperparameters import Config
 
-import mazeworld
+import mazeworld4 as mazeworld
 
 config = Config()
 
@@ -35,7 +36,7 @@ config.EXP_REPLAY_SIZE = 2000
 config.BATCH_SIZE = 32
 
 #Learning control variables
-config.LEARN_START = 100
+config.LEARN_START = 10000
 config.MAX_FRAMES=1500000
 
 #Nstep controls
@@ -84,7 +85,7 @@ class RecurrentExperienceReplayMemory:
 
 
 class DRQN(nn.Module):
-    def __init__(self, input_shape, num_actions, gru_size=10, bidirectional=False):
+    def __init__(self, input_shape, num_actions, gru_size=30, bidirectional=False):
         super(DRQN, self).__init__()
 
         self.input_shape = input_shape
@@ -220,14 +221,6 @@ class Model(DQN_Agent):
         self.seq = [np.zeros(self.num_feats) for j in range(self.sequence_length)]
 
 if __name__ == "__main__":
-    #start = timer()
-
-    #env_id = "PongNoFrameskip-v4"
-    #env = make_atari(env_id)
-    #env = wrap_deepmind(env, frame_stack=False)
-    #env = wrap_pytorch(env)
-
-
     env = mazeworld.gameEnv()
     model = Model(env=env, config=config)
 
@@ -260,20 +253,16 @@ if __name__ == "__main__":
             episode_num += 1
 
 
-            if np.mean(model.rewards[-20:]) > 50:
+            if np.mean(model.rewards[-30:]) > 130:
                 break
 
+    torch.save(model.model, 'model_drqn_3_0.pkl')
 
-    #model.save_w()
-    #env.close()
-
-    torch.save(model.model, 'model.pkl')
-    #model = torch.load('model.pkl')
-
+    #simple test
     R = 0
     s = env.reset()
     while True:
-        a = model.get_action(s, 0.05)
+        a = model.get_action(s, 0.01)
         print(s, a)
         s, reward, done = env.step(a)
         R += reward
