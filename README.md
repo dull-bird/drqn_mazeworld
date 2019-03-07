@@ -1,5 +1,10 @@
-# 强化学习不太强，mazeworld无妹子
-This is a demo of DQRN, in the Mazeworld.
+# Deep Recurrent Q-Network
+This is a demo of DQRN, with the env as Mazeworld.
+
+Basic maze: an MDP model, IN: (0, 0), OUT: (2, 5)
+state: (row, col), reward: -5 for any step before finding OUT, 100 for achieving OUT.
+
+
 
 In the maze: Mazeworld3, there is a BONUS at position (3, 4), if you get (3, 4) for the first time, and if you choose to act "UP", you will get a bonus of 100.
 
