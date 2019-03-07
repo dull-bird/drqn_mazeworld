@@ -66,7 +66,7 @@ class DQN(nn.Module):
 
     def init(self):
         self.hidden1.weight.data.normal_(0, 0.1)
-        #self.hidden2.weight.data.normal_(0, 0.1)
+        self.hidden2.weight.data.normal_(0, 0.1)
         self.actions.weight.data.normal_(0, 0.1)
 
 class ExperienceReplayMemory:
@@ -235,6 +235,8 @@ if __name__ == "__main__":
 
     episode_reward = 0
 
+    episode_num  = 0
+
     observation = env.reset()
     for frame_idx in range(1, config.MAX_FRAMES):
         epsilon = config.epsilon_by_frame(frame_idx)
@@ -242,8 +244,7 @@ if __name__ == "__main__":
         action = model.get_action(observation, epsilon)
         prev_observation = observation
         observation, reward, done = env.step(action)
-        if reward>0:
-            print (reward)
+
         observation = None if done else observation
 
         #print(prev_observation, action, reward, observation, frame_idx)
@@ -253,13 +254,15 @@ if __name__ == "__main__":
         episode_reward += reward
 
         if done or episode_reward < -3000:
-            print("episode", frame_idx, episode_reward)
+            print("episode", episode_num, episode_reward)
             observation = env.reset()
             model.save_reward(episode_reward)
             episode_reward = 0
+            episode_num += 1
 
             if np.mean(model.rewards[-20:]) > 50:
                 break
+
 
     print(model.rewards)
 
