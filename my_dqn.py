@@ -11,7 +11,7 @@ import math
 
 from utils.hyperparameters import Config
 from agents.BaseAgent import BaseAgent
-import mazeworld as mazeworld
+import env.mazeworld_basic as mazeworld
 
 config = Config()
 

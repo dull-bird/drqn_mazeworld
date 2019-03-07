@@ -15,7 +15,7 @@ from agents.DQN_a import Model as DQN_Agent
 from utils.ReplayMemory import ExperienceReplayMemory
 from utils.hyperparameters import Config
 
-import mazeworld_I as mazeworld
+import env.mazeworld_I as mazeworld
 
 config = Config()
 

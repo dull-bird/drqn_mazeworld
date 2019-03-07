@@ -12,7 +12,7 @@ from agents.DQN import Model as DQN_Agent
 
 from utils.hyperparameters import Config
 
-import mazeworld
+import env.mazeworld_basic as mazeworld
 
 config = Config()
 
