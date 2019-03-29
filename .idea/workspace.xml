@@ -2,7 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="112a4bca-9867-4301-bcce-b3d1768a83a9" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/draw_plot.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/records/DRQNA_level1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/records/DRQNA_level2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/records/DRQNA_level3.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/records/DRQN_level3.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/records/records.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/my_drqn.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/my_drqn.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/model_test.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/my_dqn.py" beforeDir="false" afterPath="$PROJECT_DIR$/my_dqn.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my_drqn.py" beforeDir="false" afterPath="$PROJECT_DIR$/my_drqn.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my_drqn3.py" beforeDir="false" afterPath="$PROJECT_DIR$/my_drqn3.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my_drqna.py" beforeDir="false" afterPath="$PROJECT_DIR$/my_drqna.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -15,42 +28,24 @@
     <SUITE FILE_PATH="coverage/my_drqn$my_drqn3.coverage" NAME="my_drqn3 Coverage Results" MODIFIED="1551620549933" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/my_drqn$model_test.coverage" NAME="model_test Coverage Results" MODIFIED="1551588512925" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/my_drqn$mazeworld_no_S.coverage" NAME="mazeworld_no_S Coverage Results" MODIFIED="1551590483456" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/my_drqn$my_drqn.coverage" NAME="my_drqn Coverage Results" MODIFIED="1551884556915" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/my_drqn$my_drqn_I.coverage" NAME="my_drqn_I Coverage Results" MODIFIED="1551888818155" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/my_drqn$my_drqn.coverage" NAME="my_drqn Coverage Results" MODIFIED="1552017089620" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/my_drqn$mazeworld4.coverage" NAME="mazeworld4 Coverage Results" MODIFIED="1551441440231" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/my_drqn$dqn_morvan.coverage" NAME="dqn_morvan Coverage Results" MODIFIED="1551345332690" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/my_drqn$mazeworld3.coverage" NAME="mazeworld3 Coverage Results" MODIFIED="1551437692197" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/my_drqn$my_dqn.coverage" NAME="my_dqn Coverage Results" MODIFIED="1551939767583" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/my_drqn$my_dqn.coverage" NAME="my_dqn Coverage Results" MODIFIED="1552370514041" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/my_drqn$my_drqn4.coverage" NAME="my_drqn4 Coverage Results" MODIFIED="1551586178479" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/my_drqn$my_drqn2.coverage" NAME="my_drqn2 Coverage Results" MODIFIED="1551440636336" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/my_drqn_I.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" column="22" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/my_drqn.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-3792">
-              <caret line="9" selection-start-line="9" selection-end-line="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/my_dqn.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4420">
-              <caret line="260" column="28" selection-start-line="260" selection-start-column="28" selection-end-line="260" selection-end-column="28" />
+            <state relative-caret-position="17">
+              <caret line="29" column="14" selection-start-line="29" selection-start-column="14" selection-end-line="29" selection-end-column="14" />
               <folding>
-                <element signature="e#0#12#0" expanded="true" />
+                <element signature="e#45#63#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -81,6 +76,7 @@
       <find>num_feats</find>
       <find>TARGET_NET_UPDATE_FREQ</find>
       <find>TARGET_NET_UPDATE</find>
+      <find>GRU</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -95,25 +91,27 @@
         <option value="$PROJECT_DIR$/my_drqn2.py" />
         <option value="$PROJECT_DIR$/mazeworld4.py" />
         <option value="$PROJECT_DIR$/my_drqn4.py" />
-        <option value="$PROJECT_DIR$/model_test.py" />
         <option value="$PROJECT_DIR$/mazeworld_I.py" />
-        <option value="$PROJECT_DIR$/my_drqn3.py" />
         <option value="$PROJECT_DIR$/my_drqn_I_update.py" />
         <option value="$PROJECT_DIR$/agents/DQN.py" />
-        <option value="$PROJECT_DIR$/agents/DQN_a.py" />
         <option value="$PROJECT_DIR$/mazeworld_no_S_simple.py" />
         <option value="$PROJECT_DIR$/mazeworld_no_S.py" />
-        <option value="$PROJECT_DIR$/my_drqn.py" />
         <option value="$PROJECT_DIR$/my_drqn_I.py" />
+        <option value="$PROJECT_DIR$/env/mazeworld_NO_basic.py" />
+        <option value="$PROJECT_DIR$/agents/DQN_a.py" />
+        <option value="$PROJECT_DIR$/my_drqna.py" />
+        <option value="$PROJECT_DIR$/my_drqn.py" />
+        <option value="$PROJECT_DIR$/my_drqn3.py" />
+        <option value="$PROJECT_DIR$/model_test.py" />
+        <option value="$PROJECT_DIR$/draw_plot.py" />
         <option value="$PROJECT_DIR$/my_dqn.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="799" />
-    <option name="y" value="-39" />
-    <option name="width" value="995" />
-    <option name="height" value="1057" />
+    <option name="x" value="-14" />
+    <option name="width" value="982" />
+    <option name="height" value="1044" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -139,12 +137,14 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../market_sim" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\DAI Zhiwen\Documents\GitHub\my_drqn\venv" />
       <recent name="C:\Users\DAI Zhiwen\Documents\GitHub\my_drqn\agents" />
       <recent name="C:\Users\DAI Zhiwen\Documents\GitHub\my_drqn" />
     </key>
@@ -184,7 +184,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="mazeworld_no_S" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="draw_plot" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="my_drqn" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -197,9 +197,31 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/mazeworld_no_S.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/draw_plot.py" />
       <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="model_test" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="my_drqn" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/model_test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
       <option name="REDIRECT_INPUT" value="false" />
@@ -250,7 +272,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="my_drqn3" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="my_drqna" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="my_drqn" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -263,31 +285,9 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/my_drqn3.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/my_drqna.py" />
       <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="my_drqn_I" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="my_drqn" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/my_drqn_I.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
       <option name="REDIRECT_INPUT" value="false" />
@@ -297,10 +297,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Python.my_dqn" />
-        <item itemvalue="Python.my_drqn_I" />
         <item itemvalue="Python.my_drqn" />
-        <item itemvalue="Python.my_drqn3" />
-        <item itemvalue="Python.mazeworld_no_S" />
+        <item itemvalue="Python.draw_plot" />
+        <item itemvalue="Python.model_test" />
+        <item itemvalue="Python.my_drqna" />
       </list>
     </recent_temporary>
   </component>
@@ -333,22 +333,29 @@
       <workItem from="1551868234706" duration="33000" />
       <workItem from="1551873711704" duration="6497000" />
       <workItem from="1551884411810" duration="2861000" />
-      <workItem from="1551938646538" duration="1846000" />
+      <workItem from="1551938646538" duration="7702000" />
+      <workItem from="1551949685964" duration="17142000" />
+      <workItem from="1552012633409" duration="2549000" />
+      <workItem from="1552032064957" duration="63000" />
+      <workItem from="1552369265162" duration="1571000" />
+      <workItem from="1552378408186" duration="18000" />
+      <workItem from="1552477322050" duration="360000" />
+      <workItem from="1552647781124" duration="40000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="60113000" />
+    <option name="totallyTimeSpent" value="87712000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1563" height="845" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2936877" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3215947" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32819074" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32959327" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32819074" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39831698" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -358,14 +365,14 @@
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Terminal" order="11" weight="0.32959327" />
-      <window_info anchor="bottom" id="Python Console" order="12" weight="0.24403927" />
-      <window_info anchor="right" x="0" y="0" width="340" height="645" id="Documentation" side_tool="true" weight="0.32956812" />
+      <window_info anchor="bottom" id="Python Console" order="12" weight="0.35624123" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Remote Host" order="3" />
       <window_info anchor="right" id="SciView" order="4" />
       <window_info anchor="right" id="Database" order="5" />
+      <window_info anchor="right" x="0" y="0" width="340" height="645" id="Documentation" order="6" side_tool="true" weight="0.32956812" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -405,20 +412,8 @@
         <state relative-caret-position="-8" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mazeworld3.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="337">
-          <caret line="51" column="17" lean-forward="true" selection-start-line="51" selection-start-column="17" selection-end-line="51" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mazeworld2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="199">
-          <caret line="69" column="4" lean-forward="true" selection-start-line="69" selection-start-column="4" selection-end-line="74" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/mazeworld3.py" />
+    <entry file="file://$PROJECT_DIR$/mazeworld2.py" />
     <entry file="file://$PROJECT_DIR$/my_drqn2.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="161">
@@ -429,13 +424,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mazeworld.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="452">
-          <caret line="64" column="18" lean-forward="true" selection-start-line="64" selection-start-column="18" selection-end-line="64" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/mazeworld.py" />
     <entry file="file://$PROJECT_DIR$/../pytorch_tut/pytorch_codes/dqn_morvan.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="262">
@@ -470,16 +459,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/model_test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="17" column="5" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
-          <folding>
-            <element signature="e#0#12#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://C:/Anaconda/Lib/site-packages/torch/nn/modules/module.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="151">
@@ -494,16 +473,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/agents/DRQN.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1207">
-          <caret line="80" column="31" selection-start-line="80" selection-start-column="31" selection-end-line="80" selection-end-column="31" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/my_drqn4.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1224">
@@ -515,16 +484,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/my_drqn_I_update.py" />
-    <entry file="file://$PROJECT_DIR$/my_drqn3.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1819">
-          <caret line="107" selection-start-line="107" selection-end-line="107" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/agents/DQN.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
@@ -532,51 +491,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mazeworld4.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="27" selection-start-line="5" selection-start-column="27" selection-end-line="5" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mazeworld_no_S.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="26" selection-start-column="26" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mazeworld_I.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="395">
-          <caret line="90" column="20" selection-start-line="90" selection-start-column="20" selection-end-line="90" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mazeworld_no_S_simple.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="60" selection-start-column="60" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/env/mazeworld2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="40" column="34" lean-forward="true" selection-start-line="40" selection-start-column="34" selection-end-line="40" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/env/mazeworld3.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-510" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/env/mazeworld4.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-459" />
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/mazeworld4.py" />
+    <entry file="file://$PROJECT_DIR$/mazeworld_no_S.py" />
+    <entry file="file://$PROJECT_DIR$/mazeworld_I.py" />
+    <entry file="file://$PROJECT_DIR$/mazeworld_no_S_simple.py" />
+    <entry file="file://$PROJECT_DIR$/env/mazeworld2.py" />
+    <entry file="file://$PROJECT_DIR$/env/mazeworld3.py" />
+    <entry file="file://$PROJECT_DIR$/env/mazeworld4.py" />
     <entry file="file://$PROJECT_DIR$/env/mazeworld_trans.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
@@ -584,33 +505,119 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/my_drqn.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3792">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
+    <entry file="file://$PROJECT_DIR$/my_drqn_I.py" />
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/my_drqn_I.py">
+    <entry file="file://$PROJECT_DIR$/agents/DRQN.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="22" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="22" />
+        <state relative-caret-position="1360">
+          <caret line="80" column="31" selection-start-line="80" selection-start-column="31" selection-end-line="80" selection-end-column="31" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/env/mazeworld_NO_basic.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="59" column="35" lean-forward="true" selection-start-line="59" selection-start-column="35" selection-end-line="59" selection-end-column="35" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/agents/DQN_a.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="32" column="42" selection-start-line="32" selection-start-column="42" selection-end-line="32" selection-end-column="42" />
+        <state relative-caret-position="850">
+          <caret line="159" column="8" selection-start-line="159" selection-start-column="8" selection-end-line="159" selection-end-column="8" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/env/mazeworld_PO_bonus.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-663" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/env/mazeworld_PO_basic.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/records/records.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/my_drqn3.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="26" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+          <folding>
+            <element signature="e#0#12#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/draw_plot.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="56" selection-start-line="2" selection-start-column="56" selection-end-line="2" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/env/mazeworld_basic.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="884">
+          <caret line="52" column="24" lean-forward="true" selection-start-line="52" selection-start-column="24" selection-end-line="52" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils/data_structures.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1377">
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/my_dqn.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4420">
-          <caret line="260" column="28" selection-start-line="260" selection-start-column="28" selection-end-line="260" selection-end-column="28" />
+        <state relative-caret-position="1044">
+          <caret line="260" column="28" lean-forward="true" selection-start-line="260" selection-start-column="28" selection-end-line="260" selection-end-column="28" />
           <folding>
             <element signature="e#0#12#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/my_drqna.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3009">
+          <caret line="33" selection-start-line="33" selection-end-line="33" />
+          <folding>
+            <element signature="e#36#54#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/my_drqn.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="29" column="14" selection-start-line="29" selection-start-column="14" selection-end-line="29" selection-end-column="14" />
+          <folding>
+            <element signature="e#45#63#0" expanded="true" />
           </folding>
         </state>
       </provider>

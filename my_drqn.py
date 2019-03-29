@@ -35,7 +35,7 @@ config.EXP_REPLAY_SIZE = 2000
 config.BATCH_SIZE = 32
 
 #Learning control variables
-config.LEARN_START = 100
+config.LEARN_START = 10000
 config.MAX_FRAMES=1500000
 
 #Nstep controls
@@ -109,6 +109,7 @@ class DRQN(nn.Module):
         feats = x.view(batch_size, sequence_length, -1)
 
         hidden = self.init_hidden(batch_size) if hx is None else hx
+
         out, hidden = self.gru(feats, hidden)
         x = F.relu(self.fc1(out))
         x = self.fc2(x)
@@ -260,7 +261,7 @@ if __name__ == "__main__":
             episode_num += 1
 
 
-            if np.mean(model.rewards[-20:]) > 50:
+            if np.mean(model.rewards[-30:]) > 130:
                 break
 
 

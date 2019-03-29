@@ -1,0 +1,37 @@
+LEVEL 1: basic
+
+DRQNA:
+- GRU, 15 units, 2 layers
+- 10000 start steps
+
+DRQN:
+- GRU, 10 units, 1 layer
+- 10000 start steps
+
+DQN:
+
+
+LEVEL 2: bonus_knock
+
+DRQNA:
+- GRU, 15 units, 2 layers
+- 10000 start steps
+
+DRQN:
+- GRU, 10 units, 1 layer
+- 10000 start steps
+
+DQN:
+
+
+LEVEL 3: PO_bonus
+
+DRQNA:
+- GRU, 15 units, 2 layers
+- 10000 start steps
+
+DRQN:
+- GRU, 10 units, 1 layer
+- 10000 start steps
+
+DQN:

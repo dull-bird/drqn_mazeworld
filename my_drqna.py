@@ -15,7 +15,7 @@ from agents.DQN_a import Model as DQN_Agent
 from utils.ReplayMemory import ExperienceReplayMemory
 from utils.hyperparameters import Config
 
-import env.mazeworld_I as mazeworld
+import env.mazeworld_basic as mazeworld
 
 config = Config()
 
@@ -38,7 +38,7 @@ config.EXP_REPLAY_SIZE = 2000
 config.BATCH_SIZE = 32
 
 #Learning control variables
-config.LEARN_START = 2000
+config.LEARN_START = 10000
 config.MAX_FRAMES=1500000
 
 #Nstep controls
@@ -222,6 +222,18 @@ class Model(DQN_Agent):
         # self.action_hx = self.model.init_hidden(1)
         self.seq = [np.zeros(self.num_feats) for j in range(self.sequence_length)]
 
+    def obesrvation_action(self, observation, action):
+        if action == 0:
+            action = [-1, 0]
+        elif action == 1:
+            action = [1, 0]
+        elif action == 2:
+            action = [0, -1]
+        else:
+            action = [0, 1]
+
+        return list(observation) + action
+
 if __name__ == "__main__":
     env = mazeworld.gameEnv()
     model = Model(env=env, config=config)
@@ -235,6 +247,8 @@ if __name__ == "__main__":
 
     observation_action = list(observation).copy()
     observation_action.append(action)
+
+    #observation_action = model.obesrvation_action(observation, action)
 
     for frame_idx in range(1, config.MAX_FRAMES + 1):
         prev_observation_action = observation_action
@@ -251,6 +265,7 @@ if __name__ == "__main__":
         else:
             observation_action = list(observation).copy()
             observation_action.append(action)
+            #observation_action = model.obesrvation_action(observation, action)
 
         model.update(prev_observation_action, action, reward, observation_action, frame_idx)
         episode_reward += reward
@@ -271,6 +286,7 @@ if __name__ == "__main__":
 
             observation_action = list(observation).copy()
             observation_action.append(action)
+            #observation_action = model.obesrvation_action(observation, action)
 
 
             if np.mean(model.rewards[-30:]) > 130:

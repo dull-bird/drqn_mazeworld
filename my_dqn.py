@@ -11,7 +11,7 @@ import math
 
 from utils.hyperparameters import Config
 from agents.BaseAgent import BaseAgent
-import env.mazeworld_basic as mazeworld
+import env.mazeworld_PO_bonus as mazeworld
 
 config = Config()
 
@@ -33,7 +33,7 @@ config.EXP_REPLAY_SIZE = 2000
 config.BATCH_SIZE = 32
 
 #Learning control variables
-config.LEARN_START = 100
+config.LEARN_START = 10000
 config.MAX_FRAMES = 50000
 config.n_hidden1 = 20
 config.n_hidden2 = 50
@@ -260,7 +260,7 @@ if __name__ == "__main__":
             episode_reward = 0
             episode_num += 1
 
-            if np.mean(model.rewards[-20:]) > 50:
+            if np.mean(model.rewards[-100:]) > 50:
                 break
 
 

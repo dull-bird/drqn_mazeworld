@@ -1,17 +1,17 @@
 import torch
-import mazeworld3 as mazeworld
-import my_drqn_I as my_drqn
+import env.mazeworld_basic as mazeworld
+import my_drqn as my_drqn
 
 from my_drqn3 import DRQN
 
 env = mazeworld.gameEnv()
 model = my_drqn.Model(env=env, config=my_drqn.config)
 
-net_model=torch.load("model_drqn_I.pkl")
+net_model=torch.load("model.pkl")
 model.model = net_model
 
 
-epsilon = 0.1
+epsilon = 0.0
 
 R = 0
 s = env.reset()
