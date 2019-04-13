@@ -1,7 +1,7 @@
 # Deep Recurrent Q-Network
 This is a demo of DQRN, with the env as MazeWorld.
 
-* **Mazeorld** (No _mei zi_ here)
+* **MazeWorld** (No _mei zi_ here)
 1. Basic maze: 
     * IN: (0, 0), OUT: (2, 5)
     * state: (row, col)
