@@ -11,7 +11,7 @@ import math
 
 from utils.hyperparameters import Config
 from agents.BaseAgent import BaseAgent
-import env.mazeworld_PO_bonus as mazeworld
+import env.mazeworld_basic as mazeworld
 
 config = Config()
 
